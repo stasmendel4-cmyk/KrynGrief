@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRYN GRIEF | МАГАЗИН АНАРХИИ ⚔️</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@400;700&display=swap');
+        
+        body { 
+            background: #000 url('https://w.forfun.com/fetch/f2/f239f15049c313a268e0d3cb1e8979be.jpeg') no-repeat center center fixed; 
+            background-size: cover;
+            color: #fff; 
+            font-family: 'Ubuntu', sans-serif; 
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle, rgba(0,255,0,0.2) 0%, rgba(0,0,0,0.85) 100%);
+            z-index: -1;
+        }
+
+        .container { max-width: 1200px; margin: auto; padding: 40px 20px; text-align: center; }
+
+        header { margin-bottom: 60px; animation: fadeIn 1.5s ease; }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(40px, 8vw, 90px);
+            margin: 0;
+            background: linear-gradient(to bottom, #fff, #00ff00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 20px rgba(0,255,0,0.8));
+        }
+
+        /* Стильный блок с IP */
+        .ip-block {
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.7);
+            border: 2px solid #00ff00;
+            padding: 15px 30px;
+            border-radius: 15px;
+            margin-top: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .ip-block:hover { transform: scale(1.05); background: #00ff00; color: #000; }
+        .ip-text { font-weight: bold; font-size: 20px; }
+
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+            margin-top: 50px;
+        }
+
+        .case-section {
+            background: rgba(0, 40, 0, 0.5);
+            border: 4px dashed #00ff00;
+            border-radius: 40px;
+            padding: 40px;
+            margin-bottom: 70px;
+            backdrop-filter: blur(10px);
+        }
+
+        .card { 
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 30px; 
+            border-radius: 25px; 
+            transition: 0.4s; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover { 
+            transform: translateY(-10px);
+            border-color: #00ff00;
+            box-shadow: 0 15px 40px rgba(0, 255, 0, 0.3);
+        }
+
+        .emoji { font-size: 60px; margin-bottom: 15px; display: block; }
+        .price { font-size: 45px; font-weight: 900; color: #fff; text-shadow: 0 0 15px #00ff00; margin: 15px 0; }
+        
+        .btn { 
+            background: #00ff00;
+            color: #000;
+            text-decoration: none;
+            padding: 18px; 
+            border-radius: 15px; 
+            font-weight: 900;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .btn:hover { background: #fff; box-shadow: 0 0 20px #fff; }
+
+        .lore {
+            text-align: left;
+            font-size: 14px;
+            background: rgba(0,0,0,0.5);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #00ff00;
+            color: #ccc;
+        }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>KRYN GRIEF</h1>
